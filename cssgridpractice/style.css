@@ -8,28 +8,37 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     background: transparent;
 }
 
-.base_part{
-    display: inline-block;
-    padding: 10px 15px;
-    
-    width: auto;
-    border-radius: 5px;
-    margin: 15px;
-    margin-top:  20px;
+html,body{
+    height: 100%;
+}
+
+.container{
+    height: 100%;
+}
+
+.base-part{
+    padding: 10px 15px;  
 }
 
 #header{
-    background-color: rgba(224, 47, 38, .7);
+    background-color: #3A6B7E;
+    margin: 0;
+    height: 2.5rem;
+    color: white;
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
 }
 
 #body{
-    background-color: rgba(142, 7, 0, 0.8);
+    background-color: #8EE1D7;
+    height: 50%;
 }
 
 #projectGrid{
-    background-color: rgba(146, 208, 35, 1);
+    background-color: #F7BC8D;
+    height: 60%;
 }
 
 #footer{
-    background-color: rgba(63, 150, 254, 0.5);
+    background-color: #E24D28;
 }
