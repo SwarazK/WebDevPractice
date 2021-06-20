@@ -1,0 +1,35 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.base_part{
+    display: inline-block;
+    padding: 10px 15px;
+    
+    width: auto;
+    border-radius: 5px;
+    margin: 15px;
+    margin-top:  20px;
+}
+
+#header{
+    background-color: rgba(224, 47, 38, .7);
+}
+
+#body{
+    background-color: rgba(142, 7, 0, 0.8);
+}
+
+#projectGrid{
+    background-color: rgba(146, 208, 35, 1);
+}
+
+#footer{
+    background-color: rgba(63, 150, 254, 0.5);
+}
