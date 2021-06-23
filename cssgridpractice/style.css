@@ -45,13 +45,12 @@ html,body{
     background: linear-gradient(0deg, rgba(142,225,215,1) 0%, rgba(142,174,225,1) 96%);
     height: 45%;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #body>#cover{
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    padding-top: 22vh;
     font-size: 40px;
 }
 
