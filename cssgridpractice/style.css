@@ -94,4 +94,6 @@ html,body{
     color: white;
     padding-top: 1.5rem;
     padding-bottom: .5rem;
+    display: flex;
+    justify-content: center;
 }
