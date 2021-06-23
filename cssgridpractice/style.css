@@ -16,6 +16,12 @@ html,body{
     height: 100%;
 }
 
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 #header{
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 14%, rgba(58,107,126,1) 52%, rgba(0,212,255,1) 100%);
@@ -41,6 +47,7 @@ html,body{
 }
 
 #body{
+    margin-top: 2.5rem;
     background: rgb(142,225,215);
     background: linear-gradient(0deg, rgba(142,225,215,1) 0%, rgba(142,174,225,1) 96%);
     height: 45%;
