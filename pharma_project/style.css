@@ -12,41 +12,118 @@ html,body{
     height: 100%;
 }
 
+body{
+    background: #E6F5E0;
+}
+
 .container{
     height: 100%;
+    padding: 0 15%;
+}
+
+.base-part{
+    width: 70%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .container{
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .base-part{
+        width: 100%;
+    }
 }
 
 .sticky{
     position: fixed;
     top: 0;
-    width: 100%;
+    
 }
 
 #header{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 14%, rgba(58,107,126,1) 52%, rgba(0,212,255,1) 100%);
+    width: 100%;
+    left: 0;
+    background-color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #header{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+#logo-img{
+    height: 70px;
+    width: 280px;
+    padding: 10px 0px;
+    padding-left: 15%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #logo-img{
+        padding-left: 0;
+    }
+}
+
+#nav-bar-parent{
+    position: fixed;
+    width: 100%;
+    background :white;
+    padding-top: 1.5rem;
+    margin-top: 90px;
+    left: 0;
+    padding: 0% 15%;
+    height: 4rem;
+}
+
+#nav-bar-custom{
     margin: 0;
     height: 2.5rem;
     color: white;
     padding-top: 1.5rem;
-    padding-bottom: .5rem;
+    margin-top: 90px;
+    background-color:  #E63946 ;
+    border-radius: 15px 15px 0px 0px;
 }
 
-#header>div{
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #nav-bar-custom{
+        left: 0;
+    }
+}
+
+#nav-bar-custom>div{
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(80px,110px));
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    /* padding-bottom: .5rem; */
+    margin-left: 40px;
+    
 }
 
 
-#header>div>#last{
+#nav-bar-custom>div>#last{
     grid-column: -1/-1;
-    margin-right: 40px;
+    margin-right: 60px;
+}
+
+#body-dummy{
+    height: 90px;
 }
 
 #body{
+    width: 100%;
     margin-top: 2.5rem;
     background: rgb(142,225,215);
     background: linear-gradient(0deg, rgba(142,225,215,1) 0%, rgba(142,174,225,1) 96%);
@@ -62,8 +139,10 @@ html,body{
 }
 
 #projectGrid{
-    background: rgb(247,188,141);
-    background: linear-gradient(0deg, rgba(247,188,141,1) 0%, rgba(139,34,45,1) 54%, rgba(175,0,0,1) 100%);
+    width: 100%;
+    background: white;
+    /* background: rgb(247,188,141);
+    background: linear-gradient(0deg, rgba(247,188,141,1) 0%, rgba(139,34,45,1) 54%, rgba(175,0,0,1) 100%); */
     height: fit-content;
     color: white;
 }
@@ -88,6 +167,7 @@ html,body{
 }
 
 #footer{
+    width: 100%;
     background-color: #E24D28;
     margin: 0;
     height: 2rem;
@@ -96,8 +176,4 @@ html,body{
     padding-bottom: .5rem;
     display: flex;
     justify-content: center;
-}
-
-body,html{
-    background: transparent;
 }
