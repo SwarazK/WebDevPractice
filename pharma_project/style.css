@@ -1,0 +1,103 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html,body{
+    height: 100%;
+}
+
+.container{
+    height: 100%;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#header{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 14%, rgba(58,107,126,1) 52%, rgba(0,212,255,1) 100%);
+    margin: 0;
+    height: 2.5rem;
+    color: white;
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+#header>div{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px,110px));
+    margin-left: 20px;
+}
+
+
+#header>div>#last{
+    grid-column: -1/-1;
+    margin-right: 40px;
+}
+
+#body{
+    margin-top: 2.5rem;
+    background: rgb(142,225,215);
+    background: linear-gradient(0deg, rgba(142,225,215,1) 0%, rgba(142,174,225,1) 96%);
+    height: 45%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#body>#cover{
+    font-size: 40px;
+}
+
+#projectGrid{
+    background: rgb(247,188,141);
+    background: linear-gradient(0deg, rgba(247,188,141,1) 0%, rgba(139,34,45,1) 54%, rgba(175,0,0,1) 100%);
+    height: fit-content;
+    color: white;
+}
+
+#projects{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.project{
+    background-color: white;
+    margin: 40px;
+    border-radius: 10px;
+    padding: 60px;
+}
+
+.project-images{
+    width: 100%;
+}
+
+#footer{
+    background-color: #E24D28;
+    margin: 0;
+    height: 2rem;
+    color: white;
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+    display: flex;
+    justify-content: center;
+}
+
+body,html{
+    background: transparent;
+}
