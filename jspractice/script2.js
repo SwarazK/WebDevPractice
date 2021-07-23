@@ -81,7 +81,7 @@ function drawCard(){
 }
 
 
-// Change the amount of chips based on previous game_state, stop if chips <= 0, update info_element and set game_state to the base state, 
+// Change the amount of chips based on previous game_state, stop if chips <= 0, update info_element and set game_state to the not started, 
 // input the name of the player if its the first round and update the corresponding field and element, 
 // display the name and chips, 
 // reset sum and cards, draw two cards and call renderAndCheckState
@@ -93,7 +93,7 @@ function startGame(){
 
     if(game_state == 1) player.chips += 50;
     else if(game_state == 2) player.chips -= 50;
-    game_state = 0;
+    game_state = -1;
 
     if(player.chips > 0){
         if(player.name === "Player") player.name = prompt("Enter your name");
