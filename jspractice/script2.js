@@ -39,6 +39,7 @@ let info_element = document.getElementById("game-info");
 let current_element = document.getElementById("current-cards");
 let sum_element = document.getElementById("current-sum");
 let start_btn_element = document.getElementById("start-btn");
+let new_btn_element = document.getElementById("new-btn");
 let player_info_element = document.getElementById("player-info");
 
 
@@ -81,6 +82,8 @@ function drawCard(){
 }
 
 
+start_btn_element.addEventListener('click', startGame);
+
 // Change the amount of chips based on previous game_state, stop if chips <= 0, update info_element and set game_state to the not started, 
 // input the name of the player if its the first round and update the corresponding field and element, 
 // display the name and chips, 
@@ -112,7 +115,7 @@ function startGame(){
     
 }
 
-
+new_btn_element.addEventListener('click',newCard);
 // Check if game is in a legal state, call drawCard and renderAndCheckState
 function newCard(){
     // Check if game is in a legal state, call drawCard and renderAndCheckState
